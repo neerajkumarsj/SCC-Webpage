@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujnana Coaching Center</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <style>
+        .header{
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('{% static "img/bg.jpg" %}');
+        }
+    </style>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo.png' %}"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <div class="textbox">
+            <h1>Sujnana Coaching Centre</h1>
+            <p> We create Innovation in wonders
+            <br>With great minds</p>
+            <a href="" class="hero-btn">Visit us to know more</a>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Course We offer</h1>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Free SSLC Tuitions for failed students</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>PreGraduation Science</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>PreGraduation Maths</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Our Centres</h1>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="{% static 'img/london.png' %}" alt="" srcset="">
+                <div class="layer">
+                    <h3>
+                        SHIMOGA
+                    </h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'img/newyork.png' %}" alt="" srcset="">
+                <div class="layer">
+                    <h3>
+                        BANGALORE
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="facilities">
+        <h1>Our Features</h1>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="{% static 'img/tests.jpg' %}" alt="" srcset="">
+                <h3>Periodic Tests</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static 'img/ptm.png' %}" alt="" srcset="">
+                <h3>Parent Teacher Conference</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static 'img/special.jpg' %}" alt="" srcset="">
+                <h3>Special Attention To failed Students</h3>
+                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>What our Students says</h1>
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">   
+            <div class="testimonial-col">
+                <img src="{% static 'img/user1.jpg' %}" alt="" srcset="">
+                <div>
+                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <h3>User1</h3>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="{% static 'img/user2.jpg' %}" alt="" srcset="">
+                <div>
+                    <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Lorem Ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <h3>User2</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>
+            Enroll for Our Various Online Courses
+        </h1>
+        <a href="" class="hero-btn">Contact us </a>
+    </section>
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+    <script src="{% static 'js/nav.js' %}"></script>
+</body>
+</html>
+ 
